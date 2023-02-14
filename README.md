@@ -33,6 +33,6 @@ Now just wait for the build to finish and the new Jar file will be in `Hbm-s-Nuc
 ## **Special thanks to the following people:**
 HBM and all the contributors for the original 1.7 Mod\
 Drillgon for the original 1.12 port\
-TheOriginalGolem and Alcater for their 1.12 ports. which contains carious bugfixs and feature additions.\
+TheOriginalGolem and Alcater for their 1.12 ports. which contains various bugfixs and feature additions.\
 70000HP for various contributions\
 Mexikoedi for various bugfixes\
