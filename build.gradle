@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.8.2a-Gv2"
+version = "1.8.3a-G"
 group = "com.hbm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "hbm"
 
@@ -68,6 +68,11 @@ dependencies {
     // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
     //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
+    //Compile against the OpenComputers api
+    compile "li.cil.oc:OpenComputers:MC1.12.2-1.7.+:api"
+
+    // at runtime, use the full OC jar MC1.12.2-1.7.5.221
+    runtime "li.cil.oc:OpenComputers:MC1.12.2-1.7.5.221"
     // the deobf configurations:  'deobfCompile' and 'deobfProvided' are the same as the normal compile and provided,
     // except that these dependencies get remapped to your current MCP mappings
     //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
@@ -78,10 +83,6 @@ dependencies {
     // at runtime, use the full JEI jar
     runtime "mezz.jei:jei_${mc_version}:${jei_version}"
 
-    // compile against the OC API but do not include it at runtime
-    provided "li.cil.oc:OpenComputers:MC1.12.2-1.7.5.221:api"
-    // at runtime, use the full OC jar MC1.12.2-1.7.5.221
-    runtime "li.cil.oc:OpenComputers:MC1.12.2-1.7.5.221"
 
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
